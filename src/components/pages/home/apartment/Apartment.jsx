@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 const Apartment = () => (
   <section className={cx('apartment')}>
-    <div className={cx('container', 'container_xs')}>
+    <div className={cx('container', 'container-small')}>
       <p className={cx('expertise')}>Our expertise</p>
       <h2 className={cx('title')}>"The best apartment in Dubai" we will find your dream</h2>
       <p className={cx('text')}>
