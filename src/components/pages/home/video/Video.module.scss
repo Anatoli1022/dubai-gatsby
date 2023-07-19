@@ -1,0 +1,57 @@
+.video {
+  margin-top: 90px;
+
+  @include md-down {
+    margin-top: 70px;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.background {
+  display: block;
+  width: 100%;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  background: #fcd54c;
+  border: none;
+  border-radius: 100%;
+  transform: translateY(-50%) translateX(-50%);
+
+  @include md-down {
+    width: 52px;
+    height: 52px;
+  }
+
+  @include xs-down {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.image-play {
+  max-width: 27px;
+
+  @include md-down {
+    max-width: 12px;
+    max-height: 18px;
+  }
+
+  @include xs-down {
+    max-width: 6px;
+  }
+}
