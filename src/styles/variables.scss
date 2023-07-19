@@ -1,9 +1,9 @@
 // Colors
-$color-primary: '';
-$color-secondary: '';
-$color-tertiary: '';
+$color-primary: #e8e8e8;
+$color-secondary: #fcd54c;
+$color-tertiary: #272727;
 
-$color-accent-primary: '';
+$color-accent-primary: #fff;
 $color-accent-secondary: '';
 
 $color-primary-hover: '';
@@ -11,11 +11,11 @@ $color-accent-primary-hover: '';
 $color-accent-secondary-hover: '';
 
 // Fonts
-$font-family-primary: '';
-$font-family-secondary: '';
+$font-family-primary: 'Work Sans';
+$font-family-secondary: 'Space Grotesk';
 
 $font-size-base: '';
-$line-height-base: '';
+$line-height-base: 1.6;
 
 $font-size-xxl: '';
 $line-height-xxl: '';
@@ -36,7 +36,7 @@ $font-size-xs: '';
 $line-height-xs: '';
 
 // Animate
-$transition-base: 0.2s;
+$transition-base: 0.3s;
 
 // Breakpoints
 $breakpoint-lg-down: 1280px - 0.02px;

@@ -1,0 +1,47 @@
+.container {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include md-down {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.container-large {
+  max-width: 1920px;
+
+  @include md-down {
+    max-width: 730px;
+  }
+
+  @include xs-down {
+    max-width: 308px;
+  }
+}
+
+.container-medium {
+  max-width: 1230px;
+
+  @include md-down {
+    max-width: 730px;
+  }
+
+  @include xs-down {
+    max-width: 308px;
+  }
+}
+
+.container-small {
+  max-width: 850px;
+
+  @include md-down {
+    max-width: 730px;
+  }
+
+  @include xs-down {
+    max-width: 308px;
+  }
+}
