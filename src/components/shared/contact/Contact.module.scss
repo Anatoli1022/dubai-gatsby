@@ -1,0 +1,95 @@
+.contact {
+  margin-top: 115px;
+  text-align: center;
+
+  @include md-down {
+    margin-top: 70px;
+  }
+}
+
+.contact-container {
+  position: relative;
+  padding: 85px 0;
+
+  @include md-down {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-tertiary;
+
+  @include md-down {
+    font-size: 12px;
+  }
+}
+
+.title {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 120px;
+  line-height: 0.6;
+  color: $color-tertiary;
+
+  @include md-down {
+    margin-top: 15px;
+    font-size: 70px;
+  }
+}
+
+.form {
+  margin-top: 55px;
+  color: $color-tertiary;
+  border: none;
+
+  @include md-down {
+    margin-top: 30px;
+  }
+}
+
+.form-mail {
+  padding: 25px 95px 25px 40px;
+  border: none;
+  outline: none;
+
+  @include md-down {
+    padding: 15px 168px 15px 30px;
+    border: none;
+    outline: none;
+  }
+}
+
+.form-button {
+  padding: 25px 65px;
+  margin-left: -7px;
+  color: $color-accent-primary;
+  cursor: pointer;
+  background-color: $color-tertiary;
+  border: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  @include md-down {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+  }
+}
