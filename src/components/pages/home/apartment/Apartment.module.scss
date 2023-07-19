@@ -1,0 +1,40 @@
+.apartment {
+  margin-top: 70px;
+}
+
+.expertise {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-secondary;
+
+  @include md-down {
+    font-size: 16px;
+  }
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 0.99;
+
+  @include md-down {
+    margin-top: 14px;
+    font-size: 30px;
+  }
+}
+
+.text {
+  margin-top: 35px;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: $color-primary;
+
+  @include md-down {
+    margin-top: 23px;
+    font-size: 14px;
+  }
+}
