@@ -1,0 +1,112 @@
+.footer-mobile {
+  @include lg-down {
+    display: block;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-gray;
+
+    &:first-child {
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+@include lg-down {
+  .active {
+    .title {
+      color: $color-secondary;
+
+      &::before {
+        background-color: $color-secondary;
+        transform: rotate(-50deg);
+      }
+
+      &::after {
+        background-color: $color-secondary;
+        transform: rotate(50deg);
+      }
+    }
+
+    .links-list {
+      display: block;
+      margin-top: 25px;
+
+      &:first-of-type {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+
+  @include lg-down {
+    &::before,
+    &::after {
+      position: absolute;
+      top: 10px;
+      width: 12px;
+      height: 1px;
+      content: '';
+      background-color: $color-gray;
+      transition: $transition-base;
+    }
+  }
+
+  &::before {
+    right: 8px;
+    transform: rotate(50deg);
+  }
+
+  &::after {
+    right: 0;
+    transform: rotate(-50deg);
+  }
+
+  @include sm-down {
+    font-size: 16px;
+  }
+}
+
+.links-list {
+  padding-left: 0;
+  margin-top: 40px;
+  margin-bottom: 0;
+  list-style: none;
+
+  @include lg-down {
+    display: none;
+  }
+
+  @include sm-down {
+    font-size: 14px;
+  }
+}
+
+.list-item {
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.list-link {
+  font-size: 18px;
+  font-weight: 300;
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
