@@ -1,0 +1,159 @@
+.footer {
+  padding-top: 70px;
+  margin-top: 120px;
+  margin-top: 122px;
+  border-top: 1px solid rgb(255 255 255 / 30%);
+}
+
+.logo {
+  display: block;
+  max-width: 184px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  @include lg-down {
+    flex-direction: column;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-primary;
+}
+
+.contact-list {
+  padding-left: 0;
+  margin-top: 40px;
+  margin-bottom: 0;
+  list-style: none;
+
+  @include lg-down {
+    margin-top: 20px;
+  }
+}
+
+.list-item {
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.mail {
+  font-size: 18px;
+  font-weight: 300;
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.contact-container {
+  margin-top: 40px;
+}
+
+.text-address {
+  max-width: 190px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: $color-primary;
+}
+
+.button-link {
+  display: block;
+  padding: 12px 14px;
+  margin-top: 78px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+    background: none;
+  }
+
+  @include lg-down {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+.footer-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 95px;
+  border-top: 1px solid rgb(255 255 255 / 30%);
+
+  @include sm-down {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  @include sm-down {
+    order: 1;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.item {
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.item-link {
+  padding-bottom: 2px;
+  transition: $transition-base;
+
+  &:hover {
+    border-bottom: 2px solid $color-secondary;
+  }
+}
