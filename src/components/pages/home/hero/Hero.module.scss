@@ -14,8 +14,8 @@
 
 .block-text {
   position: absolute;
-  top: 250px;
-  left: 330px;
+  top: 26%;
+  left: 18%;
   z-index: 2;
 
   @include md-down {
@@ -147,8 +147,8 @@
 
 .rectangle {
   position: absolute;
-  top: 210px;
-  left: 300px;
+  top: 22%;
+  left: 15%;
   width: 124px;
   height: 383px;
   border: 4px solid $color-secondary;
@@ -224,6 +224,10 @@
   list-style: none;
   background-color: $color-tertiary;
 
+  @include lg-down {
+    padding: 25px 16px 20px 30px;
+  }
+
   @include md-down {
     right: 10px;
     padding: 10px 10px 10px 30px;
@@ -266,7 +270,7 @@
   font-weight: 700;
   color: $color-secondary;
 
-  @include md-down {
+  @include lg-down {
     font-size: 40px;
   }
 
