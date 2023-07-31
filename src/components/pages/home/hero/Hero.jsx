@@ -1,21 +1,21 @@
 import React from 'react';
-import classNameNames from 'classNames/bind';
+import classNames from 'classNames/bind';
 import styles from './Hero.module.scss';
 
-const cx = classNameNames.bind(styles);
+const cx = classNames.bind(styles);
 
-import background from './images/background.jpg';
 import facebook from '../../../../images/facebook.svg';
 import twitter from '../../../../images/twitter.svg';
 import youtube from '../../../../images/youtube.svg';
 import instagram from '../../../../images/instagram.svg';
 import linkedIn from '../../../../images/in.svg';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => (
   <section className="hero">
-    <div className={cx('container', 'hero-container', 'container_xl')}>
-      <img
-        src={background}
+    <div className={cx('container', 'hero-container', 'container-large')}>
+      <StaticImage
+        src="./images/background.jpg"
         alt=""
         className={cx('background')}
         loading="eager"
@@ -26,7 +26,7 @@ const Hero = () => (
         <h1 className={cx('title')}>
           Welcome home <span className={cx('title-span')}>to</span> luxury
         </h1>
-        <a href="" className={cx('link')}>
+        <a href="#" className={cx('link')}>
           Book a consultation
         </a>
       </div>
@@ -35,27 +35,27 @@ const Hero = () => (
       <ul className={cx('list')}>
         <li className={cx('item')}>
           <a href="#" className={cx('item-link')}>
-            <img src={facebook} alt="facebook" loading="eager" className="hero__image-icon" />
+            <img src={facebook} alt="facebook" loading="eager" className={cx('image-icon')} />
           </a>
         </li>
         <li className={cx('item')}>
           <a href="#" className={cx('item-link')}>
-            <img src={twitter} alt="twitter" loading="eager" className="hero__image-icon" />
+            <img src={twitter} alt="twitter" loading="eager" className={cx('image-icon')} />
           </a>
         </li>
         <li className={cx('item')}>
           <a href="#" className={cx('item-link')}>
-            <img src={youtube} alt="youtube" loading="eager" className="hero__image-icon" />
+            <img src={youtube} alt="youtube" loading="eager" className={cx('image-icon')} />
           </a>
         </li>
         <li className={cx('item')}>
           <a href="#" className={cx('item-link')}>
-            <img src={instagram} alt="instagram" loading="eager" className="hero__image-icon" />
+            <img src={instagram} alt="instagram" loading="eager" className={cx('image-icon')} />
           </a>
         </li>
         <li className={cx('item')}>
           <a href="#" className={cx('item-link')}>
-            <img src={linkedIn} alt="in" loading="eager" className="hero__image-icon" />
+            <img src={linkedIn} alt="in" loading="eager" className={cx('image-icon')} />
           </a>
         </li>
       </ul>
