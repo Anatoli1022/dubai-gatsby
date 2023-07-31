@@ -1,0 +1,83 @@
+.item {
+  padding: 20px 50px 20px 40px;
+  border-top: 1px solid $color-gray;
+
+  &:last-child {
+    border-bottom: 1px solid $color-gray;
+  }
+
+  @include sm-down {
+    padding: 20px 50px 20px 15px;
+  }
+}
+
+.active {
+  .item-title::before {
+    transform: rotate(0deg);
+  }
+
+  .item-title::after {
+    background-color: $color-primary;
+  }
+
+  .item-title {
+    color: $color-secondary;
+  }
+
+  .item-text {
+    display: block;
+    margin-top: 25px;
+
+    &:first-of-type {
+      margin-top: 15px;
+    }
+  }
+}
+
+.item-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    right: -18px;
+    bottom: 50%;
+    width: 18px;
+    height: 2px;
+    content: '';
+    background-color: $color-secondary;
+    transition: all 0.3s ease 0s;
+
+    @include sm-down {
+      right: -30px;
+    }
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    transform: rotate(0deg);
+  }
+
+  @include sm-down {
+    font-size: 16px;
+  }
+}
+
+.item-text {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+
+  @include sm-down {
+    font-size: 14px;
+  }
+}
