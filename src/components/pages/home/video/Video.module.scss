@@ -12,6 +12,23 @@
   margin-left: auto;
 }
 
+.youtube iframe {
+  width: 100%;
+  height: 920px;
+
+  @include lg-down {
+    height: 600px;
+  }
+
+  @include md-down {
+    height: 400px;
+  }
+
+  @include sm-down {
+    height: 190px;
+  }
+}
+
 .background {
   display: block;
   width: 100%;
