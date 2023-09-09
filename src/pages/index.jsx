@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import Hero from 'components/pages/home/hero';
+import Projects from 'components/shared/projects/Projects';
 import Apartment from 'components/pages/home/apartment';
 import Video from 'components/pages/home/video';
 import Information from 'components/pages/home/information';
@@ -13,6 +14,7 @@ import Questions from 'components/pages/home/questions/questions';
 const HomePage = () => (
   <Layout>
     <Hero />
+    <Projects />
     <Apartment />
     <Video />
     <Information />
