@@ -16,17 +16,6 @@ export const Accordion = ({ section, key }) => {
   );
 };
 
-export const AccordionLink = ({ section, key }) => {
-  const { isOpen, toggle } = useOpen(false);
-
-  return (
-    <li className={cx('item', { active: isOpen == true })}>
-      <Title question={section.title} isOpen={isOpen} toggle={toggle} />
-      <Link link={section.firstLink} />
-    </li>
-  );
-};
-
 export const Title = ({ question, toggle }) => {
   return (
     <h3 className={cx('item-title')} onClick={toggle}>
@@ -37,12 +26,4 @@ export const Title = ({ question, toggle }) => {
 
 export const Text = ({ text }) => {
   return <p className={cx('item-text')}>{text}</p>;
-};
-
-export const Link = ({ link }) => {
-  return (
-    <a href="#" className={cx('item-link')}>
-      {link}
-    </a>
-  );
 };
