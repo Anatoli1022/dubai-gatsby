@@ -1,0 +1,139 @@
+.projects {
+  margin-top: 125px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+  font-weight: 700;
+
+  @include md-down {
+    font-size: 30px;
+  }
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  color: $color-gray;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  @include md-down {
+    font-size: 12px;
+  }
+}
+
+.content-image {
+  position: relative;
+}
+
+.content-image:hover .content-info {
+  opacity: 1;
+}
+
+.image {
+  z-index: -2;
+  max-width: 430px;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  z-index: 0;
+  font-size: 32px;
+  color: $color-accent-primary;
+}
+
+.content-info {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 46px 60px 44px 38px;
+  text-align: left;
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary;
+  opacity: 0;
+  transition: $transition-base;
+
+  @include lg-down {
+    padding: 17px 24px 13px 10px;
+  }
+}
+
+.info-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: $color-tertiary;
+
+  @include md-down {
+    font-size: 18px;
+  }
+}
+
+.info-text {
+  max-width: 330px;
+  margin-top: 75px;
+  margin-bottom: 0;
+  font-size: 22px;
+  color: $color-tertiary;
+
+  @include lg-down {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  @include md-down {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}
+
+.info-link {
+  display: block;
+  margin-top: 110px;
+  font-size: 20px;
+  font-weight: 700;
+  color: $color-tertiary;
+  text-decoration: none;
+
+  @include lg-down {
+    margin-top: 50px;
+  }
+
+  @include md-down {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+}
+
+.wrapper {
+  :global {
+    .swiper {
+      margin-top: 77px;
+
+      @include md-down {
+        margin-top: 30px;
+      }
+    }
+
+    .swiper-slide {
+      max-width: 432px;
+    }
+  }
+}
