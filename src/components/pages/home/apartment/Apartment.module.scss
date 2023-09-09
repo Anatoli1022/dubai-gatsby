@@ -1,5 +1,9 @@
 .apartment {
   margin-top: 70px;
+
+  @include md-down {
+    margin-top: 80px;
+  }
 }
 
 .expertise {
@@ -22,8 +26,15 @@
   line-height: 0.99;
 
   @include md-down {
+    max-width: 450px;
     margin-top: 14px;
     font-size: 30px;
+    line-height: normal;
+  }
+
+  @include sm-down {
+    margin-top: 10px;
+    font-size: 24px;
   }
 }
 
