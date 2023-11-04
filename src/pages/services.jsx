@@ -2,13 +2,13 @@ import React from 'react';
 
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import Contact from 'components/shared/contact/Contact';
-import Articles from 'components/shared/articles/Articles';
+import Contact from 'components/shared/contact';
+import Propose from 'components/pages/services/propose';
 
 const Services = () => (
   <Layout>
     <Contact />
-    <Articles />
+    <Propose />
   </Layout>
 );
 

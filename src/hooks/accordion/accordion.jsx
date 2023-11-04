@@ -5,7 +5,7 @@ import useOpen from 'hooks/open/open';
 
 const cx = classNames.bind(styles);
 
-export const Accordion = ({ section, key }) => {
+export const Accordion = ({ section }) => {
   const { isOpen, toggle } = useOpen(false);
 
   return (
@@ -25,5 +25,15 @@ export const Title = ({ question, toggle }) => {
 };
 
 export const Text = ({ text }) => {
-  return <p className={cx('item-text')}>{text}</p>;
+  return (
+    <>
+      {text.map((textItem, index) => {
+        return (
+          <p className={cx('item-text')} key={index}>
+            {textItem}
+          </p>
+        );
+      })}
+    </>
+  );
 };

@@ -3,12 +3,12 @@ import React from 'react';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import Hero from 'components/pages/home/hero';
-import Projects from 'components/shared/projects/Projects';
+import Projects from 'components/shared/projects';
 import Apartment from 'components/pages/home/apartment';
 import Video from 'components/pages/home/video';
 import Information from 'components/pages/home/information';
 import Contact from 'components/shared/contact';
-import Articles from 'components/shared/articles';
+import Articles from 'components/pages/home/articles';
 import Questions from 'components/pages/home/questions/questions';
 
 const HomePage = () => (
