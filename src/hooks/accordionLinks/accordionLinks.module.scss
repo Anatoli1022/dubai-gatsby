@@ -18,14 +18,15 @@
     .title {
       color: $color-secondary;
 
-      &::before {
-        background-color: $color-secondary;
-        transform: rotate(-50deg);
+      .arrow {
+        transform: rotate(180deg);
       }
 
-      &::after {
-        background-color: $color-secondary;
-        transform: rotate(50deg);
+      .arrow-left,
+      .arrow-right {
+        fill: $color-secondary;
+        stroke: $color-secondary;
+        transition: $transition-base;
       }
     }
 
@@ -41,45 +42,29 @@
 }
 
 .title {
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
-
-  @include lg-down {
-    &::before,
-    &::after {
-      position: absolute;
-      top: 10px;
-      width: 12px;
-      height: 1px;
-      content: '';
-      background-color: $color-gray;
-      transition: $transition-base;
-    }
-  }
-
-  &::before {
-    right: 8px;
-    transform: rotate(50deg);
-  }
-
-  &::after {
-    right: 0;
-    transform: rotate(-50deg);
-  }
 
   @include sm-down {
     font-size: 16px;
   }
 }
 
+.arrow {
+  display: none;
+  transition: $transition-base;
+
+  @include lg-down {
+    display: block;
+  }
+}
+
 .links-list {
-  padding-left: 0;
   margin-top: 40px;
-  margin-bottom: 0;
   list-style: none;
 
   @include lg-down {
