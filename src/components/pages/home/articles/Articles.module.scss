@@ -1,0 +1,183 @@
+.articles {
+  margin-top: 140px;
+
+  @include md-down {
+    margin-top: 140px;
+  }
+}
+
+.articles-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 70px;
+
+  @include md-down {
+    font-size: 30px;
+  }
+
+  @include sm-down {
+    max-width: 150px;
+    font-size: 24px;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-gray;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+
+    .link-arrow {
+      fill: $color-secondary;
+      stroke: $color-secondary;
+      transition: $transition-base;
+    }
+  }
+
+  @include xs-down {
+    font-size: 12px;
+  }
+}
+
+.link-span {
+  margin-right: 25px;
+}
+
+.list {
+  display: flex;
+  row-gap: 20px;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+
+  @include sm-down {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.item {
+  position: relative;
+}
+
+.item:hover .content-info {
+  opacity: 1;
+}
+
+.image {
+  z-index: -2;
+  max-width: 350px;
+
+  @include md-down {
+    max-width: 208px;
+    height: 230px;
+  }
+
+  @include sm-down {
+    width: 290px;
+    max-width: none;
+    height: 220px;
+  }
+}
+
+.image-title {
+  position: absolute;
+  bottom: 50px;
+  left: 35px;
+  z-index: 0;
+  font-size: 25px;
+  color: $color-accent-primary;
+
+  @include md-down {
+    bottom: 15px;
+    left: 40px;
+    max-width: 140px;
+    font-size: 18px;
+  }
+
+  @include sm-down {
+    bottom: 30px;
+    max-width: none;
+  }
+}
+
+.content-info {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 30px;
+  text-align: left;
+  background-color: $color-tertiary;
+  border: 3px solid $color-secondary;
+  opacity: 0;
+  transition: $transition-base;
+
+  @include md-down {
+    padding: 20px;
+  }
+}
+
+.info-time {
+  font-size: 16px;
+
+  @include md-down {
+    font-size: 12px;
+  }
+}
+
+.info-title {
+  font-size: 25px;
+  font-weight: 700;
+
+  @include md-down {
+    max-width: 140px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+.info-text {
+  font-size: 16px;
+  color: $color-gray;
+
+  @include md-down {
+    max-width: 150px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+.info-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-secondary;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @include md-down {
+    font-size: 12px;
+  }
+}
