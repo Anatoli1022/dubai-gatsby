@@ -36,8 +36,6 @@
 
 .item-title {
   position: relative;
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
@@ -74,8 +72,6 @@
 .item-text {
   display: none;
   margin-top: 10px;
-  margin-bottom: 0;
-  white-space: pre-wrap;
 
   @include sm-down {
     font-size: 14px;

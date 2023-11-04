@@ -3,8 +3,6 @@
 }
 
 .title {
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 48px;
   font-weight: 700;
 
@@ -54,8 +52,15 @@
   bottom: 50px;
   left: 40px;
   z-index: 0;
+  margin: 0;
   font-size: 32px;
   color: $color-accent-primary;
+
+  @include md-down {
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+  }
 }
 
 .content-info {
@@ -75,8 +80,6 @@
 }
 
 .info-title {
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 32px;
   font-weight: 700;
   color: $color-tertiary;
@@ -89,7 +92,6 @@
 .info-text {
   max-width: 330px;
   margin-top: 75px;
-  margin-bottom: 0;
   font-size: 22px;
   color: $color-tertiary;
 
@@ -125,6 +127,7 @@
 .wrapper {
   :global {
     .swiper {
+      max-width: 1370px;
       margin-top: 77px;
 
       @include md-down {
@@ -132,8 +135,27 @@
       }
     }
 
+    .swiper-wrapper {
+      max-width: 1370px;
+    }
+
     .swiper-slide {
-      max-width: 432px;
+      max-width: 430px;
+    }
+
+    .swiper-pagination {
+      position: relative;
+      margin-top: 60px;
+
+      @include sm-down {
+        margin-top: 30px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      background-color: $color-secondary;
     }
   }
 }

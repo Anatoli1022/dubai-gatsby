@@ -1,17 +1,17 @@
 .container {
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
 
   @include md-down {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
 .container-large {
-  max-width: 1920px;
+  max-width: 1830px;
 
   @include md-down {
     max-width: 730px;
