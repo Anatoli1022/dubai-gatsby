@@ -1,0 +1,117 @@
+.challenge {
+  margin-top: 210px;
+}
+
+.images-wrapper {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.wrapper-text {
+  max-width: 730px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.list-numbers {
+  display: flex;
+  column-gap: 90px;
+  max-width: 720px;
+  margin-top: 120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.list-numbers-item {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.item-number {
+  font-size: 60px;
+  font-weight: 700;
+  color: $color-secondary;
+  white-space: nowrap;
+}
+
+.item-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.numbers-sup {
+  font-size: 30px;
+  font-weight: 700;
+  vertical-align: super;
+}
+
+.wrapper-challenge {
+  margin-top: 80px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-gray;
+}
+
+.text-challenge {
+  margin-top: 50px;
+}
+
+.wrapper-everything {
+  margin-top: 50px;
+}
+
+.title-everything {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.text-everything {
+  margin-top: 30px;
+}
+
+.wrapper-list {
+  margin-top: 50px;
+}
+
+.list {
+  padding-top: 65px;
+  color: $color-gray;
+  list-style: disc;
+  border-top: 1px solid $color-gray;
+}
+
+.list-item {
+  margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
