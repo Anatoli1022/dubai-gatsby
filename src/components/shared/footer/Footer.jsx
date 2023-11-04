@@ -20,7 +20,7 @@ const Footer = () => (
       <img src={logo} alt="Dubai Realty" className={cx('logo')} loading="lazy" />
       <nav className={cx('navigation')}>
         {data.map((data, index) => {
-          return <AccordionLink key={index} data={data} />;
+          return <AccordionLink data={data} key={index} />;
         })}
         <div className={cx('contact-container')}>
           <h3 className={cx('title')}>Contact</h3>
@@ -34,7 +34,7 @@ const Footer = () => (
               </a>
             </li>
           </ul>
-          <a href="" class={cx('button-link')}>
+          <a href="" className={cx('button-link')}>
             Book a consultation
           </a>
         </div>

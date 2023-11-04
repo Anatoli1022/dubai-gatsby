@@ -7,6 +7,7 @@ const data = [
     fourthLInk: 'Loft in Dubai',
     fifthLink: 'Penthouse in Dubai',
     sixthLink: 'Villa in Dubai',
+    to: '/',
   },
   {
     title: 'Services',
@@ -16,6 +17,7 @@ const data = [
     fourthLInk: 'Investments in Dubai, UAE',
     fifthLink: 'Real estate for cryptocurrency in Dubai',
     sixthLink: 'Moving to Dubai, UAE',
+    to: '/services/',
   },
   {
     title: 'Information',
@@ -25,6 +27,7 @@ const data = [
     fourthLInk: 'Questions and answers',
     fifthLink: 'Books',
     sixthLink: 'Articles',
+    to: '#',
   },
   {
     title: 'About company',
@@ -34,6 +37,7 @@ const data = [
     fourthLInk: 'Why are we',
     fifthLink: 'Real estate agency',
     sixthLink: 'Questions',
+    to: '#',
   },
 ];
 
