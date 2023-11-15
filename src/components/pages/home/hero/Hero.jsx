@@ -15,7 +15,7 @@ const Hero = () => (
   <section className="hero">
     <div className={cx('container', 'hero-container', 'container-large')}>
       <StaticImage
-        src="./images/background.jpg"
+        src="../../../../images/background.jpg"
         alt=""
         className={cx('background')}
         loading="eager"
