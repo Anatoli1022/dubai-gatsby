@@ -6,9 +6,9 @@ const cx = classNames.bind(styles);
 const ContactForm = () => (
   <section className={cx('contact')}>
     <div className={cx('container', 'container-medium ')}>
-      <h2 className={cx('title')}>
+      <h3 className={cx('title')}>
         <span className={cx('title-span')}>Be in touch</span> with us
-      </h2>
+      </h3>
 
       <form action="" className={cx('form')}>
         <div className={cx('wrapper-input')}>

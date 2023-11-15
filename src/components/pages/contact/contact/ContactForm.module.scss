@@ -1,11 +1,23 @@
 .contact {
   margin-top: 210px;
+
+  @include md-down {
+    margin-top: 70px;
+  }
+
+  @include sm-down {
+    margin-top: 50px;
+  }
 }
 
 .title {
   font-size: 32px;
   font-weight: 700;
   line-height: 35px;
+
+  @include md-down {
+    font-size: 24px;
+  }
 }
 
 .title-span {
@@ -14,11 +26,20 @@
 
 .form {
   margin-top: 70px;
+
+  @include md-down {
+    margin-top: 30px;
+  }
 }
 
 .wrapper-input {
   display: flex;
+  row-gap: 20px;
   column-gap: 30px;
+
+  @include sm-down {
+    flex-direction: column;
+  }
 }
 
 .input {
