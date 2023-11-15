@@ -1,24 +1,26 @@
 .hero-container {
   position: relative;
-  padding-top: 535px;
-  padding-bottom: 100px;
-  padding-left: 345px;
+}
+
+.wrapper-text {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  left: 351px;
+  z-index: 2;
 
   @include lg-down {
-    padding-top: 240px;
-    padding-left: 200px;
+    left: 206px;
   }
 
   @include md-down {
-    padding-top: 150px;
-    padding-bottom: 15px;
-    padding-left: 60px;
+    bottom: 15px;
+    left: 60px;
   }
 
   @include sm-down {
-    padding-top: 90px;
-    padding-bottom: 13px;
-    padding-left: 22px;
+    bottom: 13px;
+    left: 28px;
   }
 }
 
@@ -58,7 +60,7 @@
   }
 
   @include sm-down {
-    max-width: 230px;
+    max-width: 250px;
     font-size: 24px;
   }
 }
@@ -68,12 +70,10 @@
 }
 
 .background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  min-width: 100%;
+
+  @include sm-down {
+    width: 290px;
+    height: 190px;
+  }
 }
