@@ -1,0 +1,158 @@
+.header {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.first-content-block {
+  @include md-down {
+    display: none;
+  }
+}
+
+.second-content-block {
+//   z-index: 4;
+
+  @include sm-down {
+    display: none;
+  }
+}
+
+.logo-mobile {
+  display: none;
+
+  @include md-down {
+    // z-index: 4;
+    display: block;
+  }
+}
+
+.logo {
+  max-width: 184px;
+}
+
+.list {
+  position: relative;
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  margin-left: 150px;
+
+  & > li:hover .sublist {
+    display: block;
+  }
+
+  @include lg-down {
+    margin-left: 65px;
+  }
+}
+
+.sublist {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  display: none;
+  padding-top: 15px;
+}
+
+.sublist-link {
+  display: block;
+  padding: 10px 40px 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-white;
+  text-wrap: nowrap;
+  background-color: $color-black;
+  border: 1px solid $color-primary;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-black;
+    background-color: $color-yellow;
+  }
+}
+
+.list-link {
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-white;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-black;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-yellow;
+    border-bottom: 1px solid $color-yellow;
+  }
+}
+
+.button {
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: $color-yellow;
+  border: 1px solid $color-yellow;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-yellow;
+    background: none;
+  }
+}
+
+.wrapper-button-language {
+  margin-left: 120px;
+
+  @include lg-down {
+    margin-left: 30px;
+  }
+}
+
+.button-language {
+  color: $color-white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-yellow;
+  }
+}
+
+.telephone-number {
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-white;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-yellow;
+  }
+
+  @include lg-down {
+    margin-left: 22px;
+  }
+}
+
+.menu-wrapper {
+  display: none;
+
+  @include md-down {
+    display: block;
+  }
+}
