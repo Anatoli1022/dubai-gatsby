@@ -1,0 +1,69 @@
+.table {
+  margin-top: 110px;
+
+  @include md-down {
+    margin-top: 50px;
+  }
+
+  @include xs-down {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+  }
+}
+
+.content-table {
+  width: 100%;
+}
+
+.first-title {
+  text-align: start;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  align-items: center;
+  justify-content: center;
+  min-height: 87px;
+  padding-right: 100px;
+  padding-left: 20px;
+  list-style: none;
+
+  &:first-child {
+    color: $color-black;
+    background-color: $color-yellow;
+  }
+
+  &:nth-child(2n) {
+    background-color: rgb(255 255 255 / 10%);
+  }
+
+  @include md-down {
+    padding-right: 26px;
+  }
+
+  @include sm-down {
+    grid-template-columns: 34% 33% 33%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  @include xs-down {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+  }
+}
+
+.check-mark {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-yellow;
+  text-align: center;
+
+  @include xs-down {
+    font-size: 14px;
+  }
+}
