@@ -26,7 +26,7 @@
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
   }
 
   @include md-down {
@@ -54,7 +54,7 @@
   z-index: 0;
   margin: 0;
   font-size: 32px;
-  color: $color-accent-primary;
+  color: $color-white;
 
   @include md-down {
     bottom: 20px;
@@ -69,8 +69,8 @@
   height: 100%;
   padding: 46px 60px 44px 38px;
   text-align: left;
-  background-color: $color-secondary;
-  border: 2px solid $color-secondary;
+  background-color: $color-yellow;
+  border: 2px solid $color-yellow;
   opacity: 0;
   transition: $transition-base;
 
@@ -82,7 +82,7 @@
 .info-title {
   font-size: 32px;
   font-weight: 700;
-  color: $color-tertiary;
+  color: $color-black;
 
   @include md-down {
     font-size: 18px;
@@ -93,7 +93,7 @@
   max-width: 330px;
   margin-top: 75px;
   font-size: 22px;
-  color: $color-tertiary;
+  color: $color-black;
 
   @include lg-down {
     margin-top: 40px;
@@ -111,7 +111,7 @@
   margin-top: 110px;
   font-size: 20px;
   font-weight: 700;
-  color: $color-tertiary;
+  color: $color-black;
   text-decoration: none;
 
   @include lg-down {
@@ -155,7 +155,7 @@
     .swiper-pagination-bullet {
       width: 14px;
       height: 14px;
-      background-color: $color-secondary;
+      background-color: $color-yellow;
     }
   }
 }

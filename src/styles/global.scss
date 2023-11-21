@@ -8,13 +8,17 @@ body {
   font-family: $font-family-primary;
   line-height: $line-height-base;
   color: $color-primary;
-  background-color: $color-tertiary;
+  background-color: $color-black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   img {
     width: 100%;
   }
+}
+
+.menu-open {
+  overflow: hidden;
 }
 
 h1,
@@ -24,6 +28,7 @@ h4,
 h5,
 h6,
 p,
+blockquote,
 a,
 ul {
   padding: 0;

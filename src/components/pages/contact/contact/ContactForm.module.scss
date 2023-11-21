@@ -21,7 +21,7 @@
 }
 
 .title-span {
-  color: $color-secondary;
+  color: $color-yellow;
 }
 
 .form {
@@ -73,12 +73,12 @@
   line-height: 26px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: $color-secondary;
-  border: 1px solid $color-secondary;
+  background-color: $color-yellow;
+  border: 1px solid $color-yellow;
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
     background: none;
   }
 }

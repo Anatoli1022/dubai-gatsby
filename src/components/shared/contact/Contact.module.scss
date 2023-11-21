@@ -30,7 +30,7 @@
 .text {
   font-size: 18px;
   font-weight: 600;
-  color: $color-tertiary;
+  color: $color-black;
 
   @include md-down {
     font-size: 12px;
@@ -41,7 +41,7 @@
   margin-top: 15px;
   font-size: 120px;
   line-height: 0.6;
-  color: $color-tertiary;
+  color: $color-black;
 
   @include md-down {
     margin-top: 15px;
@@ -55,7 +55,7 @@
 
 .form {
   margin-top: 55px;
-  color: $color-tertiary;
+  color: $color-black;
   border: none;
 
   @include md-down {
@@ -76,14 +76,14 @@
 .form-button {
   padding: 25px 65px;
   margin-left: -7px;
-  color: $color-accent-primary;
+  color: $color-white;
   cursor: pointer;
-  background-color: $color-tertiary;
+  background-color: $color-black;
   border: none;
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
   }
 
   @include md-down {

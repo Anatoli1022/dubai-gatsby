@@ -12,7 +12,7 @@
 
 .quotation-wrapper {
   padding: 70px 80px;
-  border: 2px solid $color-secondary;
+  border: 2px solid $color-yellow;
 
   @include md-down {
     padding: 40px 60px;
@@ -35,7 +35,7 @@
 
 .quotation-name {
   font-style: normal;
-  color: $color-secondary;
+  color: $color-yellow;
 }
 
 .wrapper-info {

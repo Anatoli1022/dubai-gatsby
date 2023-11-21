@@ -35,11 +35,11 @@
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
 
     .link-arrow {
-      fill: $color-secondary;
-      stroke: $color-secondary;
+      fill: $color-yellow;
+      stroke: $color-yellow;
       transition: $transition-base;
     }
   }
@@ -56,15 +56,20 @@
 .list {
   display: flex;
   row-gap: 20px;
-  justify-content: space-between;
+  column-gap: 23px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
   text-align: center;
   list-style: none;
 
+  @include md-down {
+    margin-top: 40px;
+  }
+
   @include sm-down {
     flex-direction: column;
-    row-gap: 20px;
-    align-items: center;
-    justify-content: center;
+    margin-top: 20px;
   }
 }
 
@@ -98,7 +103,7 @@
   left: 35px;
   z-index: 0;
   font-size: 25px;
-  color: $color-accent-primary;
+  color: $color-white;
 
   @include md-down {
     bottom: 15px;
@@ -123,8 +128,8 @@
   min-height: 100%;
   padding: 30px;
   text-align: left;
-  background-color: $color-tertiary;
-  border: 3px solid $color-secondary;
+  background-color: $color-black;
+  border: 3px solid $color-yellow;
   opacity: 0;
   transition: $transition-base;
 
@@ -169,7 +174,7 @@
   justify-content: space-between;
   font-size: 16px;
   font-weight: 600;
-  color: $color-secondary;
+  color: $color-yellow;
   text-decoration: none;
   transition: $transition-base;
 

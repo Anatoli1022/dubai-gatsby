@@ -21,7 +21,7 @@
   }
 
   .item-title {
-    color: $color-secondary;
+    color: $color-yellow;
   }
 
   .item-text {
@@ -48,7 +48,7 @@
     width: 18px;
     height: 2px;
     content: '';
-    background-color: $color-secondary;
+    background-color: $color-yellow;
     transition: all 0.3s ease 0s;
 
     @include sm-down {

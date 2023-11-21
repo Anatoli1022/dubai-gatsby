@@ -16,7 +16,7 @@
 @include lg-down {
   .active {
     .title {
-      color: $color-secondary;
+      color: $color-yellow;
 
       .arrow {
         transform: rotate(180deg);
@@ -24,8 +24,8 @@
 
       .arrow-left,
       .arrow-right {
-        fill: $color-secondary;
-        stroke: $color-secondary;
+        fill: $color-yellow;
+        stroke: $color-yellow;
         transition: $transition-base;
       }
     }
@@ -92,6 +92,6 @@
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
   }
 }
