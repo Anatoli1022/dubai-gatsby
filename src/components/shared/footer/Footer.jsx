@@ -1,4 +1,6 @@
 import React from 'react';
+import { AccordionLink } from 'hooks/accordionLinks/accordionLinks';
+import { Link } from 'gatsby';
 import classNames from 'classNames/bind';
 import styles from './Footer.module.scss';
 
@@ -12,12 +14,13 @@ import youtube from '../../../images/youtube.svg';
 import instagram from '../../../images/instagram.svg';
 import linkedIn from '../../../images/in.svg';
 import logo from '../../../images/logo.svg';
-import { AccordionLink } from 'hooks/accordionLinks/accordionLinks';
 
 const Footer = () => (
   <footer className={cx('footer')}>
     <div className={cx('container', 'footer-container', 'container-large')}>
-      <img src={logo} alt="Dubai Realty" className={cx('logo')} loading="lazy" />
+      <Link to="/">
+        <img src={logo} alt="Dubai Realty" className={cx('logo')} loading="lazy" />
+      </Link>
       <nav className={cx('navigation')}>
         {data.map((data, index) => {
           return <AccordionLink data={data} key={index} />;

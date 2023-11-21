@@ -27,6 +27,12 @@
   }
 }
 
+.contact-container {
+  @include lg-down {
+    margin-top: 30px;
+  }
+}
+
 .title {
   font-size: 18px;
   font-weight: 400;
@@ -58,7 +64,7 @@
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
   }
 }
 
@@ -78,12 +84,12 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  background-color: $color-secondary;
-  border: 2px solid $color-secondary;
+  background-color: $color-yellow;
+  border: 2px solid $color-yellow;
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
     background: none;
   }
 
@@ -117,7 +123,7 @@
   transition: $transition-base;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
   }
 
   @include sm-down {
@@ -145,6 +151,6 @@
   transition: $transition-base;
 
   &:hover {
-    border-bottom: 2px solid $color-secondary;
+    border-bottom: 2px solid $color-yellow;
   }
 }
