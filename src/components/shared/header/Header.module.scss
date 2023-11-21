@@ -21,7 +21,7 @@
 }
 
 .second-content-block {
-//   z-index: 4;
+  //   z-index: 4;
 
   @include sm-down {
     display: none;
@@ -94,7 +94,20 @@
   &:hover {
     color: $color-yellow;
     border-bottom: 1px solid $color-yellow;
+
+    .arrow-path {
+      fill: $color-yellow;
+    }
   }
+}
+
+.wrapper-arrow {
+  display: inline;
+  margin-left: 6px;
+}
+
+.arrow {
+  vertical-align: middle;
 }
 
 .button {

@@ -22,7 +22,23 @@ const Header = () => {
             <ul className={cx('list')}>
               <li className={cx('item')}>
                 <Link to="" className={cx('list-link')}>
-                  Buy
+                  <span>Buy</span>
+                  <div className={cx('wrapper-arrow')}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="6"
+                      viewBox="0 0 10 6"
+                      fill="none"
+                      className={cx('arrow')}
+                    >
+                      <path
+                        className={cx('arrow-path')}
+                        d="M4.82812 0.82843H9.65656L4.82812 5.65686L-0.000305211 0.82843H4.82812Z"
+                        fill="#ffff"
+                      />
+                    </svg>
+                  </div>
                 </Link>
                 <ul className={cx('sublist')}>
                   <li>
@@ -31,7 +47,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="" className={cx('sublist-link')}>
+                    <Link to="/apartments" className={cx('sublist-link')}>
                       Apartments in Dubai
                     </Link>
                   </li>
@@ -48,12 +64,12 @@ const Header = () => {
                 </Link>
               </li>
               <li className={cx('item')}>
-                <Link to="" className={cx('list-link')}>
+                <Link to="/services" className={cx('list-link')}>
                   About
                 </Link>
               </li>
               <li className={cx('item')}>
-                <Link to="" className={cx('list-link')}>
+                <Link to="/contact" className={cx('list-link')}>
                   {' '}
                   Contact
                 </Link>
