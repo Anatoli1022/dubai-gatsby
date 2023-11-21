@@ -9,7 +9,9 @@ import quotationMarks from './images/quotation-marks.svg';
 
 const Information = () => (
   <section className={cx('information')}>
-    <div className={cx('container container-medium')}>
+    <div className={cx('container container-medium', 'container-information')}>
+      <h2 className={cx('title')}>Real estate investment in Dubai, UAE</h2>
+
       <div className={cx('wrapper-text')}>
         <p className={cx('text')}>
           This response is important for our ability to learn from mistakes, but it alsogives rise
@@ -49,7 +51,7 @@ const Information = () => (
       />
 
       <div className={cx('wrapper-text')}>
-        <h2 className={cx('title')}>Methods for Everyone</h2>
+        <h3 className={cx('title')}>Methods for Everyone</h3>
         <p className={cx('text')}>
           Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf,
           blade of grass, and crack in the sidewalk was something to be picked up, looked at,

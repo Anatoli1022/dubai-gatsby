@@ -2,14 +2,23 @@
   margin-top: 80px;
 }
 
-.wrapper-text {
+.container-information {
   max-width: 730px;
-  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
+}
 
-  &:first-child {
-    margin-top: 0;
+.wrapper-text {
+  margin-top: 50px;
+
+  &:first-of-type {
+    margin-top: 40px;
+  }
+
+  @include sm-down {
+    &:first-of-type {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -26,6 +35,14 @@
   display: block;
   width: 100%;
   margin-top: 80px;
+
+  @include md-down {
+    margin-top: 40px;
+  }
+
+  @include sm-down {
+    margin-top: 30px;
+  }
 }
 
 .title {
@@ -47,17 +64,32 @@
   @include sm-down {
     flex-direction: column;
     row-gap: 20px;
+    padding: 10px 25px;
+    margin-top: 50px;
+  }
+
+  @include xs-down {
+    row-gap: 10px;
   }
 }
 
 .quotation-marks {
   width: 56px;
+
+  @include sm-down {
+    width: 40px;
+  }
 }
 
 .blockquote-text {
   font-size: 20px;
   font-weight: 600;
   line-height: 35px;
+
+  @include sm-down {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .blockquote-cite {
