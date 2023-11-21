@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .hero-container {
@@ -8,6 +8,10 @@
 
 .background {
   width: 100%;
+
+  @include sm-down {
+    height: 322px;
+  }
 }
 
 .block-text {
@@ -29,7 +33,7 @@
 
 .text {
   font-size: 16px;
-  color: $color-accent-primary;
+  color: $color-white;
   text-transform: uppercase;
 
   @include md-down {
@@ -66,7 +70,7 @@
   margin-top: 30px;
   font-size: 20px;
   font-weight: 700;
-  color: $color-accent-primary;
+  color: $color-white;
   text-decoration: none;
   transition: $transition-base;
 
@@ -89,7 +93,7 @@
     width: 12px;
     height: 1px;
     content: '';
-    background-color: $color-accent-primary;
+    background-color: $color-white;
 
     @include md-down {
       right: -10px;
@@ -127,17 +131,17 @@
   }
 
   &:hover {
-    color: $color-secondary;
+    color: $color-yellow;
 
     &::before,
     &::after {
-      background-color: $color-secondary;
+      background-color: $color-yellow;
     }
   }
 }
 
 .title-span {
-  color: $color-secondary;
+  color: $color-yellow;
 }
 
 .rectangle {
@@ -146,7 +150,7 @@
   left: 15%;
   width: 124px;
   height: 383px;
-  border: 4px solid $color-secondary;
+  border: 4px solid $color-yellow;
   border-right: none;
 
   @include md-down {
@@ -193,7 +197,7 @@
   transition: $transition-base;
 
   &:hover {
-    border-bottom: 2px solid $color-secondary;
+    border-bottom: 2px solid $color-yellow;
   }
 
   @include md-down {
@@ -212,7 +216,7 @@
   display: flex;
   padding: 50px 30px 40px 60px;
   list-style: none;
-  background-color: $color-tertiary;
+  background-color: $color-black;
 
   @include lg-down {
     padding: 25px 16px 20px 30px;
@@ -232,7 +236,7 @@
     padding: 0 0 7px;
     text-align: center;
     background: none;
-    border-bottom: 1px solid $color-secondary;
+    border-bottom: 1px solid $color-yellow;
   }
 }
 
@@ -258,7 +262,7 @@
 .figure {
   font-size: 60px;
   font-weight: 700;
-  color: $color-secondary;
+  color: $color-yellow;
 
   @include lg-down {
     font-size: 40px;
@@ -274,7 +278,7 @@
   margin-left: 40px;
   font-size: 16px;
   font-weight: 600;
-  color: $color-accent-primary;
+  color: $color-white;
 
   @include md-down {
     max-width: 90px;
