@@ -224,11 +224,8 @@
   }
 
   @include sm-down {
-    right: 0;
-    bottom: -85px;
-    left: 0;
+    position: static;
     justify-content: space-between;
-    max-width: 288px;
     padding: 0 0 7px;
     text-align: center;
     background: none;

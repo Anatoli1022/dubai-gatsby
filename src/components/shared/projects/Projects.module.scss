@@ -1,5 +1,9 @@
 .projects {
   margin-top: 125px;
+
+  @include sm-down {
+    margin-top: 50px;
+  }
 }
 
 .title {
@@ -36,6 +40,7 @@
 
 .content-image {
   position: relative;
+  min-width: 100%;
 }
 
 .content-image:hover .content-info {
@@ -125,6 +130,10 @@
 }
 
 .wrapper {
+  @include sm-down {
+    max-width: 400px;
+  }
+
   :global {
     .swiper {
       max-width: 1370px;
