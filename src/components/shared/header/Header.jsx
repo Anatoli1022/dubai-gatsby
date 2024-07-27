@@ -42,7 +42,7 @@ const Header = () => {
                 </Link>
                 <ul className={cx('sublist')}>
                   <li>
-                    <Link to="" className={cx('sublist-link')}>
+                    <Link to="/" className={cx('sublist-link')}>
                       Category number one{' '}
                     </Link>
                   </li>
@@ -59,8 +59,8 @@ const Header = () => {
                 </ul>
               </li>
               <li className={cx('item')}>
-                <Link to="" className={cx('list-link')}>
-                  Blog
+                <Link to="/apartments" className={cx('list-link')}>
+                  Apartments
                 </Link>
               </li>
               <li className={cx('item')}>

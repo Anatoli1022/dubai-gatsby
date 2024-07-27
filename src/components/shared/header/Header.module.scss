@@ -21,8 +21,6 @@
 }
 
 .second-content-block {
-  //   z-index: 4;
-
   @include sm-down {
     display: none;
   }
@@ -32,7 +30,6 @@
   display: none;
 
   @include md-down {
-    // z-index: 4;
     display: block;
   }
 }
@@ -60,7 +57,7 @@
 .sublist {
   position: absolute;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   display: none;
   padding-top: 15px;
 }

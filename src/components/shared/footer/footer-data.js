@@ -37,7 +37,7 @@ const data = [
     fourthLInk: 'Why are we',
     fifthLink: 'Real estate agency',
     sixthLink: 'Questions',
-    to: '#',
+    to: '/apartments',
   },
 ];
 

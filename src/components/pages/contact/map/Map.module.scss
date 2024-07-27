@@ -51,7 +51,7 @@
   left: 100px;
   z-index: 1;
   padding: 82px 50px 90px 90px;
-  background-color: $color-tertiary;
+  background-color: $color-black;
 
   @include lg-down {
     left: 30px;
@@ -80,7 +80,7 @@
 }
 
 .title-span {
-  color: $color-secondary;
+  color: $color-yellow;
   text-transform: uppercase;
 }
 

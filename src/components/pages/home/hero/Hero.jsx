@@ -12,7 +12,7 @@ import linkedIn from '../../../../images/in.svg';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => (
-  <section className={cx('hero')}>
+  <section>
     <div className={cx('container', 'hero-container', 'container-large')}>
       <StaticImage
         src="../../../../images/background.jpg"

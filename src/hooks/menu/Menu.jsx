@@ -51,7 +51,7 @@ const Menu = () => {
                   </Link>
                 </li>
                 <li className={cx('sublist-item')}>
-                  <Link to="" className={cx('sublist-link')}>
+                  <Link to="/apartments" className={cx('sublist-link')}>
                     Apartments in Dubai
                   </Link>
                 </li>
@@ -68,13 +68,12 @@ const Menu = () => {
               </Link>
             </li>
             <li className={cx('item')}>
-              <Link to="" className={cx('list-link')}>
+              <Link to="/services" className={cx('list-link')}>
                 About
               </Link>
             </li>
             <li className={cx('item')}>
-              <Link to="" className={cx('list-link')}>
-                {' '}
+              <Link to="/contact" className={cx('list-link')}>
                 Contact
               </Link>
             </li>

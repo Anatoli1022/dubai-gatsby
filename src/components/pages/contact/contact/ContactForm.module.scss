@@ -34,8 +34,7 @@
 
 .wrapper-input {
   display: flex;
-  row-gap: 20px;
-  column-gap: 30px;
+  gap: 20px 30px;
 
   @include sm-down {
     flex-direction: column;
@@ -48,9 +47,7 @@
   }
 
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 20px;
-  padding-left: 18px;
+  padding: 20px 18px;
   font-size: 16px;
   color: $color-primary;
   background: none;

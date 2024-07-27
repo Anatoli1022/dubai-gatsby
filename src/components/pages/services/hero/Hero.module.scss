@@ -66,13 +66,13 @@
 }
 
 .title-span {
-  color: $color-secondary;
+  color: $color-yellow;
 }
 
 .background {
   min-width: 100%;
 
-  @include sm-down {
+  @include xs-down {
     width: 290px;
     height: 190px;
   }

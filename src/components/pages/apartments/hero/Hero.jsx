@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 import { StaticImage } from 'gatsby-plugin-image';
 const Hero = () => {
   return (
-    <section className={cx('hero')}>
+    <section>
       <div className={cx('container', 'container-large', 'hero-container')}>
         <div className={cx('wrapper-text')}>
           <h1 className={cx('title')}>
