@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './accordionLinks.module.scss';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import useOpen from 'hooks/open/open';
 import { Link } from 'gatsby';
 

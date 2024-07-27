@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classNames/bind'; // Fix the import statement
+import classNames from 'classnames/bind'; // Fix the import statement
 import styles from './Map.module.scss';
 
 const cx = classNames.bind(styles);

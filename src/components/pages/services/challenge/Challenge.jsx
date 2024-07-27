@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import styles from './Challenge.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 

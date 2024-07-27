@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import { Accordion } from 'hooks/accordion/accordion';
 
 import { data } from './data';

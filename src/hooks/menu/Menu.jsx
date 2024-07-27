@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import styles from './Menu.module.scss';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import Link from 'components/shared/link';
 
 const cx = classNames.bind(styles);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import styles from './Projects.module.scss';
 import { Link } from 'gatsby';
 import { Swiper, SwiperSlide } from 'swiper/react';

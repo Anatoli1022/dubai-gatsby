@@ -1,7 +1,7 @@
 import React from 'react';
 import { AccordionLink } from 'hooks/accordionLinks/accordionLinks';
 import { Link } from 'gatsby';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 
 const cx = classNames.bind(styles);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import styles from './Video.module.scss';
 import play from './images/play.svg';
 import { StaticImage } from 'gatsby-plugin-image';

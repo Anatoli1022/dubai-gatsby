@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import classNames from 'classNames/bind';
+import classNames from 'classnames/bind';
 import { Link } from 'gatsby';
 import logo from '../../../images/logo.svg';
 import Menu from 'hooks/menu';
