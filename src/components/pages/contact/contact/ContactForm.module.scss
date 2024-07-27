@@ -42,10 +42,6 @@
 }
 
 .input {
-  &::placeholder {
-    color: $color-gray;
-  }
-
   width: 100%;
   padding: 20px 18px;
   font-size: 16px;
@@ -53,6 +49,10 @@
   background: none;
   border: 1px solid $color-gray;
   outline: none;
+
+  &::placeholder {
+    color: $color-gray;
+  }
 }
 
 .input-message {
